@@ -1,5 +1,14 @@
 # weightflow
 
+- [weightflow](#weightflow)
+  - [Setting up the Environment](#setting-up-the-environment)
+  - [Download MNIST MLP Weights](#download-mnist-mlp-weights)
+  - [Collecting Weights from Scratch](#collecting-weights-from-scratch)
+  - [Training the Flow](#training-the-flow)
+  - [Running SLURM Jobs](#running-slurm-jobs)
+
+You can find the thesis pdf [here](https://erdogan.dev/thesis.pdf).
+
 ## Setting up the Environment 
 
 To setup with mamba:
