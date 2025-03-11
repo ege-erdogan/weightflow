@@ -1,0 +1,35 @@
+# Basic configuration
+line-length = 128
+target-version = "py312"  # Your Python version
+
+# Enable specific rule sets
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "D",   # pydocstyle
+]
+
+# Ignore specific rules
+ignore = [
+    "D203",  # one-blank-line-before-class
+    "D212",  # multi-line-summary-first-line
+]
+
+# Exclude files or directories
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+# Per-file ignores
+[per-file-ignores]
+"__init__.py" = ["F401"]  # Ignore unused imports in __init__.py
+"test_*.py" = ["D"]       # Ignore docstring rules in test files

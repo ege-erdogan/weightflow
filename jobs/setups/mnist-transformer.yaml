@@ -1,0 +1,48 @@
+data_paths: 
+  - "../data/mnist_weights.h5"
+wandb: "mnist-flow"
+time: "2-00:00:00"
+
+configs:
+  - "euclidean"
+  # - "geometric"
+  # - "euclidean-sphere"
+fm_objective: "target"
+fm_types: 
+  - "vanilla"
+  # - "ot"
+n_iters: 100_000
+hidden_dims:
+  - 10
+lrs:
+  - 0.001
+sigmas:
+  - 0.00001
+d_embeds:
+  # - 8
+  # - 16
+  - 32
+batch_sizes:
+  - 8
+n_in_projs:
+  - 3
+n_layers: 
+  - 5
+n_heads:
+  - 1
+dropout: 0.0 
+aligned: True
+refine: False
+model: 
+  - "transformer"
+  # - "PNA"
+t_dist:
+  # - "uniform"
+  - "beta"
+source_std: 0.1
+source_mean_multiples:
+  - 0.0 # set source dist with mean zero 
+n_samples:
+  - 7_500
+  - 15_000
+
